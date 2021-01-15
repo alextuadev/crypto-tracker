@@ -3,6 +3,7 @@ import { View, Text, Pressable, StyleSheet, ActivityIndicator } from 'react-nati
 import { FlatList } from 'react-native-gesture-handler';
 import Http from '../../libs/http';
 import CoinItem from './CoinItem';
+import Colors from '../../res/colors'
 
 class CoinsScreen extends Component {
   state = {
@@ -49,6 +50,7 @@ class CoinsScreen extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: Colors.charade
   },
   btn: {
     padding: 8,
